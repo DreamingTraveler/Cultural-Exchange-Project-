@@ -20,6 +20,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.google.api.client.googleapis.auth.oauth2.GoogleAuthorizationCodeTokenRequest;
 import com.google.api.client.googleapis.auth.oauth2.GoogleClientSecrets;
 import com.google.api.client.googleapis.auth.oauth2.GoogleCredential;
+import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.api.client.googleapis.auth.oauth2.GoogleTokenResponse;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.JsonFactory;
@@ -119,7 +120,7 @@ public class Oauth2callback extends HttpServlet {
 //        System.out.println("leaving doGet");
 		System.out.println("entering doGet");
 		String authCode = request.getParameter("code");
-		String redirect_uri = "http://localhost:8080/TaimeiProject/index.jsp";
+		String redirect_uri = "postmessage";
 		String CLIENT_SECRET_FILE = "C:/Web Test/Taimei/TaimeiProject/client_secrets.json";
 
 		// Exchange auth code for access token
@@ -134,10 +135,32 @@ public class Oauth2callback extends HttpServlet {
 				authCode,
 				redirect_uri).execute();
 		String accessToken = tokenResponse.getAccessToken();
-		System.out.println("ACC:" + accessToken);
-//		File file = new File("client_secrets.json");
-//		 System.out.println("µ´¹ï¸ô®| : " + file.getAbsolutePath());
-//	     System.out.println("¸ô®| : " + file.toPath());
+		System.out.println("ACCESS TOKEN:" + accessToken);
+		
+		GoogleCredential credential = new GoogleCredential().setAccessToken(accessToken);
+
+		// Get profile info from ID token
+		GoogleIdToken idToken = tokenResponse.parseIdToken();
+		GoogleIdToken.Payload payload = idToken.getPayload();
+		String userId = payload.getSubject();  // Use this value as a key to identify a user.
+		String email = payload.getEmail();
+		boolean emailVerified = Boolean.valueOf(payload.getEmailVerified());
+		String name = (String) payload.get("name");
+		String pictureUrl = (String) payload.get("picture");
+		String locale = (String) payload.get("locale");
+		String familyName = (String) payload.get("family_name");
+		String givenName = (String) payload.get("given_name");
+		
+		System.out.println(idToken);
+		System.out.println("USER ID:" + userId);
+		System.out.println("EMAIL: " + email);
+		System.out.println("EMAIL VERIFIED: " + emailVerified);
+		System.out.println("NAME: " + name);
+		System.out.println("PICTURE URL: " + pictureUrl);
+		System.out.println("LOCALE: " + locale);
+		System.out.println("FAMILY NAME: " + familyName);
+		System.out.println("GIVEN NAME: " + givenName);
+		
 	}
 
 	/**
