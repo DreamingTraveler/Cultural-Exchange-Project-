@@ -1,0 +1,96 @@
+@font-face {
+  font-family: Gabriola;
+  src: url('../../fonts/Gabriola.ttf'),
+       url('../../fonts/Gabriola.eot');
+}
+
+@font-face {
+  font-family: XingKai;
+  src: url('../../fonts/Li.ttc'),
+       url('../../fonts/Li.eot');
+}
+
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-image: url("../../image/paper_texture.png");/* Black*/
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-shadow: -3px 3px 15px rgb(87, 88, 86);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+  text-decoration: none;
+}
+
+.menu-group{
+  width: 170px;
+}
+
+.group-title{
+  font-family: Gabriola;
+  padding: 8px 8px 8px 32px;
+  font-size: 36px;
+  color: rgb(77, 57, 14);
+  display: block;
+  transition-duration: 1s;
+  background-image: url('../../image/scroll.png');
+  background-repeat: no-repeat;
+  background-size: 100% 60px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+  width: 170px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+  color: rgba(5, 29, 6, 0.94);
+  font-weight: bold;
+  width: 350px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.text-hover{
+  font-family: Gabriola, XingKai;
+  display: none;
+  width: 350px;
+  font-size: 30px;
+}
+
+.list-group-item{
+  display: inline-block;
+  border: none;
+  background-color: transparent !important;
+  background-image: url('../../image/scroll2.png');
+  background-repeat: no-repeat;
+  background-size: 100% 60px;
+  width: 150px;
+  font-size: 30px;
+  font-family: Gabriola;
+  text-align: center;
+  margin-left: 88px;
+}
+
+.list-group-item:hover{
+  width: 172px !important;
+}
+
+.list-child{
+  display: none;
+}

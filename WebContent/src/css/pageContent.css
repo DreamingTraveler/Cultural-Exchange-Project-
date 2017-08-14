@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Gabriola;
+  src: url('../../fonts/Gabriola.ttf'),
+       url('../../fonts/Gabriola.eot');
+}
+
+.content{
+  font-family: Gabriola;
+  font-size: 42px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  width: 80%;
+  height: 50%;
+  margin: auto;
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+}
+
+video{
+  display: block;
+  margin: auto;
+}
+
+.content-title{
+  text-align: center;
+  padding-top: 30px;
+}
+
+.material{
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+}
+
+.comment{
+  display: block;
+  margin: auto;
+  width: 60%;
+  background-color: rgba(219, 219, 219, 0.75);
+  border-radius: 10px;
+}
+
+#comment-area{
+  font-size: 24px;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+#submit-comment{
+  margin-top: 30px;
+  border: 0;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.7em;
+  letter-spacing: 1px;
+  background-color: #665851;
+  cursor:pointer;
+  outline: none;
+}
+
+#submit-comment:hover{
+  opacity: 0.7;
+  transition: 0.5s;
+}

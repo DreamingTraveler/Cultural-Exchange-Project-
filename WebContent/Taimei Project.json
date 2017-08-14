@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "taimei-project",
+  "private_key_id": "0a9b3ed0a24a67af7680c1c74c1ec42661c4b837",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQD4CaejtXBcj5di\nyFf8jN+2G51QfaeS29B1jqt4EznTuK3LFm4OaHf3fW1he1u1ecWY0cCQAJ9PZmLb\n/WW6oQJtZNu7KuLdMEhitAbWpc8m73A9Tz1xt9ttf3E/dSVJqHEmNzYIPrDg6z9i\n3S4WQ+7gMyHonk0CUTiBItkhV7z76GtgiNWtomPupdnR2GcveAY9t1RbV0e2y6oy\nQh2C71b8cphdyhvFgkWztDst4MsbXiDS4TtqIIXanol4XmuxXx+1Wwzyf05sXnbI\nPoSryX+elWEK6kkX/dl6KNKHdOSlxK12ozM+OjZczYkqqLCF4/HSVjHUsQfSCFT8\nDs60I01xAgMBAAECggEACXGF/j/NBdvPsIqefaE4GT0G6cbG8lqdHq9ZDEAgeP+f\nL6FsfO7xoQIXqoOhqRCi+x+tRwOcYnpW9DeQanZxMGIL0vNIjOb8MonWeCX685QK\ngBhmvKV6h2TilmnANYQ3aUmRLJIvy3huwuBXPgYbGlJyuDe4CIkNb4PjTsIs502j\nAZrAJMory+yMQyKMfKaOWzpSmy58k2T7ShhC3w/pBGIuNvxtaX7Fkii5T8wuZcze\nT1IIrXzs4LwANQ9zXSqkCNimac0rvG2AW0s42X90R8bJ0qVFS5r3kpHDf329v98r\n05FXUWM8r5vzxCQ4iv1dlQw1glUgjpKG2zi/BYvtowKBgQD/zgCu3tAS2lZZGufk\nehVUtYC/KWfTxS832+hVLBQlSubEiuV4u3+XopE87XBQbxWPqfZW/UBDXpOxVtIt\n5ou0D2gVevpz2QndbQ2VThfyG4NDmBYOHWHZsZBeJup7/R4yALqLB9jn0JkmK32X\nK+9hjPKDLZqCSX79qzzg8pEZFwKBgQD4OiJU2nOGKgsM8qMNrLYoEox5gpozk1We\nJ/Q2s7Ip6s9cfB1Q2UHkDtCpNmtujRm4Np0FNAalL1QN3oSN5HmXlCndRmrBeueg\npQUK21zLixD+TLRCjLva08upTw6q6JyG6PSn3TMLZU5BGHFtqmbeK1EOB9vC3d9k\n6y+TeUdStwKBgFncFeVYJCPbSyX2C6v5LvEY6Wc9tllwFUw8FfuFhnYrP7GfUUj+\nJK4xz29lwWSgAST8garBQAfqe1t6sk6phD32g4u4La7weUStgG4IhuTnwU7HaEgB\nDlSYyawpY4m2uxq5os4gLZQRdRsxf+bQ6kCMcMygAnzuMIwP0Uz8KPh1AoGBAKFi\noomKkctrsE2Vvz8XyEKbdKtXp0vbAbJXBac/A5nPKUxXAXRcHEPbAfzR/d0dbdhf\n4YzNe3iQIdT2lDXwksFjOii8LJJohwnh4DpjzpwjaUP8uMH/3+7w/puwY7fojkQE\nV3SAEzzYe51E+BI11LWjcgpuP4odWK2zXvZBxoZXAoGBAPoUo3jbJmTt32zJWrwo\nV2IhpN5VDrZXOT61di2YT2f2nhMfiLstXqyVYeiQCdD7Y1jK9/dNma/6scZsV0o/\nRENWwxZJl9RYgig2EHAvW3o2a9Y8BE/0k6xNYdbIANc7SuH/gCl3rEy6S7UtvSxl\nUZDouxGkxmRNLFSSM4nOIBP0\n-----END PRIVATE KEY-----\n",
+  "client_email": "taimei@taimei-project.iam.gserviceaccount.com",
+  "client_id": "116045581261555766699",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/taimei%40taimei-project.iam.gserviceaccount.com"
+}
